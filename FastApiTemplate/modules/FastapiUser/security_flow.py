@@ -4,7 +4,10 @@ from fastapi.security import HTTPBearer
 from fastapi import Request
 
 
-class BearerFlow(HTTPBearer):
+class BearerAccessFlow(HTTPBearer):
+    pass
+
+class BearerRefreshFlow(HTTPBearer):
     pass
 
 class CookieFlow:
